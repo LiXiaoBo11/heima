@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 1.外联模式：js独立写在文件.js文件，引入 -->
+    <script src="js/outer.js"></script>
+
+    <!-- 2.内联模式：js写在html中（嵌套），使用script标签分类 -->
+
+    <!-- 注意事项：使用内联模式的切记：不要是有src属性：系统检测到src：认为是外联，不会解析内部代码 -->
+    <!-- <script src=""> -->
+    <script>
+        alert('我是自己人');
+    </script>
+</head>
+
+<body>
+    <!-- 3.行内模式：js写在具体的html元素中间（属性的方式存在） -->
+    <button onclick="window.alert('我是亲人');">按钮</button>
+</body>
+
+</html>
