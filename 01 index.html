@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-image: url(images/bg.jpg);
+            background-size: 100%;
+        }
+        
+        .box {
+            position: relative;
+            width: 1400px;
+            height: 700px;
+            /* background-color: skyblue; */
+            margin: 100px auto;
+            border: 1px solid blue;
+        }
+        
+        .aircraft {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            /* background-color: red; */
+            top: 300px;
+            transform: rotate(90deg);
+        }
+        
+        .aircraft img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .small {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            /* background-color: royalblue; */
+            right: 0px;
+            top: 40px;
+        }
+        
+        span {
+            width: 10px;
+            height: 10px;
+            /* background-color: skyblue; */
+            border-radius: 10px;
+        }
+        /* i { */
+        /* width: 30px; */
+        /* height: 30px; */
+        /* background-color: crimson; */
+        /* border-radius: 30px; */
+        /* } */
+        
+        .bigMonster {
+            transform: rotate(90deg);
+        }
+        
+        .blood1 {
+            position: absolute;
+            background-color: blue;
+            opacity: 0.5;
+            font-size: 50px;
+            color: red;
+            top: 400px;
+            left: 50px;
+        }
+        
+        .blood2 {
+            position: absolute;
+            background-color: blue;
+            opacity: 0.5;
+            font-size: 50px;
+            color: red;
+            top: 400px;
+            right: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="blood1">血量:100</h1>
+    <div class="box">
+        <div class="aircraft">
+            <img src="images/feiji2.png" alt="">
+            <div class="small"></div>
+        </div>
+    </div>
+    <h2 class="blood2">血量:100</h2>
+    <script src="js/data.js"></script>
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <!-- <script src="js/animation.js"></script> -->
+
+</body>
+
+</html>
